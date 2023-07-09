@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <main>
-        <button onClick={openSidebar} className="sidebar-toggle">
+        <button onClick={() => openSidebar()} className="sidebar-toggle">
             <FaBars />
         </button>
         <button onClick={() => openModal()} className="btn">
