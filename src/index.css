@@ -291,3 +291,37 @@ main {
     transform: scale(1);
   }
 }
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.modal-container {
+  background-color: var(--white);
+  width: 90vw;
+  height: 30vh;
+  border-radius: var(--borderRadius);
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--red-dark);
+}
