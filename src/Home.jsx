@@ -11,7 +11,7 @@ const Home = () => {
         <button onClick={openSidebar} className="sidebar-toggle">
             <FaBars />
         </button>
-        <button onClick={openModal} className="btn">
+        <button onClick={() => openModal()} className="btn">
             show Modal
         </button>
     </main>
